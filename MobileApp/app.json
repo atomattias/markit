@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "reuse",
-    "slug": "reuse",
+    "name": "Merkato",
+    "slug": "Merkato",
     "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",

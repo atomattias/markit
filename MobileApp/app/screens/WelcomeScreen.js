@@ -10,6 +10,7 @@ import TwitterSVG from "../assets/misc/twitter.svg";
 
 
 function WelcomeScreen({ navigation }) {
+  
   return (
     <ImageBackground
       blurRadius={10}
@@ -19,7 +20,7 @@ function WelcomeScreen({ navigation }) {
       
       <View style={styles.logoContainer}>
         <Image style={styles.logo} source={require("../assets/logo-red.png")} />
-        <Text style={styles.tagline}>Buy and sell used items </Text>
+        <Text style={styles.tagline}>Market place for used items </Text>
       </View>
       <View style={styles.buttonsContainer}>
         <Button
@@ -33,12 +34,14 @@ function WelcomeScreen({ navigation }) {
           color="tertiery"
           onPress={() => navigation.navigate(routes.REGISTER)}
         />
-        
+        <Text style={{ textAlign: 'center', color: '#f8f4f4', marginBottom: 30 }}>
+          Or, login with ...
+        </Text>
         <View
           style={{
             flexDirection: 'row',
             justifyContent: 'space-between',
-            marginBottom: 100,
+            marginBottom: 200,
           }}>
           <TouchableOpacity
             onPress={() => { }}
@@ -100,14 +103,15 @@ const styles = StyleSheet.create({
   },
   tagline: {
     fontSize: 25,
-    fontWeight: "600",
+    fontWeight: "800",
     paddingVertical: 60,
+    color:"#363b38"
   },
   externalAuth: {
     padding: 30,
     width: "100%",
     fontSize: 25,
-    fontWeight: "600",
+    fontWeight: "500",
     paddingVertical: 60,
   },
 });
